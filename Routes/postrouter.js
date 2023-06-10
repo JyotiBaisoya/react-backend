@@ -22,7 +22,7 @@ postRouter.get("/post/allposts",async(req,res)=>{
         res.send(posts)
     } catch (error) {
         console.log(error);
-        res.send({"error":error})
+        res.send({"error":error.message})
     }
 })
 
